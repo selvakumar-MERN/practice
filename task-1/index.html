@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student form</title>
+    <link href="index.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="index.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <form class="mt-5">
+            <h3>Student Registeration form</h3>
+            <div class="row">
+                <div class="form-group col-md-6">
+                    <label>Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Name">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputEmail4">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputDepartment">Department</label>
+                <select type="text" class="form-control" id="department">
+                    <option>Choose...</option>
+                    <option>Mechanical</option>
+                    <option>Computer science</option>
+                    <option>Civil Engineering</option>
+                    <option>ECE</option>
+                    <option>EEE</option>
+                </select>
+            </div>
+
+            <div class="row">
+                <div class="form-group col-md-6">
+                    <div>
+                        <label for="inputGender">Gender</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="inlineRadio1"
+                            value="Male">
+                        <label class="form-check-label" for="inlineRadio1">Male</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="inlineRadio1"
+                            value="Female">
+                        <label class="form-check-label" for="inlineRadio1">Female</label>
+                    </div>
+                </div>
+                <div class="form-group col-md-6">
+                    <div>
+                        <label for="inputGender">Hobbies</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="Indoor Games">
+                        <label class="form-check-label" for="inlineCheckbox1">Indoor Games</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="Travelling">
+                        <label class="form-check-label" for="inlineCheckbox2">Travelling</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="Swimming">
+                        <label class="form-check-label" for="inlineCheckbox3">Swimming</label>
+                    </div>
+                </div>
+
+            </div>
+            <div id="warning" class="my-2">
+
+            </div>
+            <div class="d-flex">
+            <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+            <button type="submit" class="btn btn-warning mx-2" id="reset">Reset</button>
+        </div>
+        </form>
+        <div class="mt-5">
+            <h3>Student details</h3>
+            <table class="table table-striped mt-3" id="student-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Department</th>
+                        <th>Gender</th>
+                        <th>Hobbies</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+
+</html>

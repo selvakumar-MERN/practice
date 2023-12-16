@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product cost form</title>
+    <link href="index.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <form class="mt-5">
+            <h4>Product form</h4>
+            <div class="row mt-3">
+                <div class="col-md-11">
+                    <div class="row" id="product-area">
+                <div class="form-group col-md-4">
+                    <label>Product Name</label>
+                    <input type="text" class="form-control" id="productname" placeholder="Product name">
+                </div>
+                <div class="form-group col-md-4">
+                    <label>Quantity</label>
+                    <input type="number" class="form-control" id="quantity" placeholder="Quantity">
+                </div>
+                <div class="form-group col-md-4">
+                    <label>Price</label>
+                    <input type="number" class="form-control" id="price" placeholder="Price">
+                </div>
+            </div>
+            </div>
+                <div class="col-md-1 d-flex justify-content-start align-items-center">
+                    <span id="addIcon"><i class="bi bi-plus-circle" style="font-size:30px; cursor: pointer;"></i></span>
+                </div>
+            </div>
+            <div id="warning" class="my-2">
+
+            </div>
+            <div class="d-flex">
+                <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+                <button type="submit" class="btn btn-warning mx-2" id="reset">Reset</button>
+            </div>
+        </form>
+        <div class="mt-5">
+            <h3>Product details</h3>
+            <table class="table table-striped mt-3" id="product-table">
+                <thead>
+                    <tr>
+                        <th>Product name</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+                <tfoot>
+                    <tr class="bg-info">
+                        <td></td>
+                        <td></td>
+                        <th>Total</th>
+                        <td id="total">0</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+
+</body>
+
+</html>

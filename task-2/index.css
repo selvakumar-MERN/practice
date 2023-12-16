@@ -1,0 +1,12 @@
+html,body,.container{
+    height: 100%;
+}
+label{
+    color: grey;
+}
+#warning{
+    color: red;
+}
+tr{
+    text-align: center;
+}
